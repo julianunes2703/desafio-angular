@@ -1,6 +1,6 @@
 #  Desafio Técnico Front-End - Angular + HTML/CSS
 
-Este repositório contém a solução de um desafio técnico de Front-End dividido em **três etapas**, com foco em HTML/CSS responsivo, Angular Standalone moderno (sem NgModule) e integração com API REST.
+Este repositório contém a solução de um desafio técnico de Front-End dividido em **três etapas**, com foco em HTML/CSS responsivo, Angular.
 
 ---
 
