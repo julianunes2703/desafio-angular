@@ -1,0 +1,9 @@
+<div *ngIf="post; else carregando">
+  <h2>{{ post.title }}</h2>
+  <p>{{ post.description }}</p>
+  <a routerLink="/">← Voltar</a>
+</div>
+
+<ng-template #carregando>
+  <p>Carregando post...</p>
+</ng-template>

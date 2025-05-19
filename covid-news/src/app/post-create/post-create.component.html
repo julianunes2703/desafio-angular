@@ -1,0 +1,7 @@
+<h2 class="form-title">Criar novo post</h2>
+
+<form (ngSubmit)="createPost()">
+  <input [(ngModel)]="post.title" name="title" placeholder="Título..." required />
+  <input [(ngModel)]="post.description" name="description" placeholder="Descrição..." required>
+  <button type="submit">Criar</button>
+</form>

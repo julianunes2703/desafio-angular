@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="header">
+    <h2>Exibindo resultado</h2>
+    <p>Encontramos um total de {{ posts.length }} resultados para a sua busca</p>
+    <a [routerLink]="['/create']" class="botao-cadastrar">+ Criar novo post</a>
+
+  </div>
+
+  <div class="content">
+    <div class="posts">
+      <div class="card" *ngFor="let post of posts">
+        <div class="card-content">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.description }}</p>
+          <a [routerLink]="['/detail', post.id]">Ler mais</a>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <h4>Categorias</h4>
+      <ul>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum dolor</li>
+      </ul>
+
+      <h4>Procurando alguma notícia?</h4>
+      <input type="text" placeholder="Pesquisar por..." />
+    </aside>
+  </div>
+</div>
